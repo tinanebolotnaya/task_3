@@ -1,0 +1,279 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Barlow";
+  src: url("./fonts/Barlow-Regular.ttf") format("truetype");
+}
+
+.image-container {
+  position: relative;
+  /* top: 170px;
+  left: 90px; */
+  width: 450px;
+  height: 600px;
+  display: flex;
+}
+
+.bg {
+  width: 100%;
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 100px;
+  z-index: 2;
+}
+
+body {
+  background-color: #eff6ff;
+  margin: 0;
+  padding: 0;
+  font-family: "Barlow", sans-serif;
+  color: #2a4a5c;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.content {
+  background-color: #ffffff;
+  width: 450px;
+  height: 600px;
+  position: relative;
+  /* right: 6px; */
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-right: 40px;
+}
+
+.facebook {
+  position: relative;
+  width: 200px;
+  height: 30px;
+  background-color: #255a9b;
+  color: #ffffff;
+  border: none;
+  font-size: 11px;
+}
+
+.svg-fb {
+  position: absolute;
+  left: 5px;
+  top: 0;
+  height: 100%;
+  width: 15px;
+}
+
+.linkedin {
+  position: relative;
+  width: 200px;
+  height: 30px;
+  background-color: #0076b6;
+  color: #ffffff;
+  border: none;
+  font-size: 11px;
+}
+
+.svg-ln {
+  position: absolute;
+  left: 5px;
+  top: 0;
+  height: 100%;
+  width: 15px;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+button:hover {
+  cursor: pointer;
+  filter: brightness(0.8);
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+h3 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #6b7280;
+  margin-top: 5px;
+}
+
+.or {
+  display: flex;
+  align-self: center;
+  font-size: 10px;
+  width: 150px;
+  align-items: center;
+}
+
+.or::before,
+.or::after {
+  content: "";
+  flex: 1;
+  border-top: 1px solid #ddd;
+  margin-top: 20px;
+}
+
+.or span {
+  margin: 0 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+input[type="email"],
+input[type="tel"] {
+  width: 176px;
+  height: 40px;
+  border-radius: none;
+}
+
+.first-input,
+.second-input {
+  position: relative;
+}
+
+.form-label {
+  position: absolute;
+  font-size: 13px;
+  top: 2px;
+  left: 5px;
+}
+
+.inputs {
+  display: flex;
+  gap: 20px;
+  color: #afafaf;
+}
+
+#email {
+  padding-top: 15px;
+}
+
+#phone {
+  padding-top: 15px;
+}
+
+#email:focus,
+#phone:focus {
+  outline: none;
+  border-left: 1px solid #0076b6;
+  border-top: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+h4 {
+  margin-top: 40px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+h5 {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-weight: 400;
+  color: #96a5b1;
+}
+
+.dots {
+  display: flex;
+  gap: 14px;
+  color: black;
+  font-size: 14px;
+}
+
+.info {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #bbb;
+  border-radius: 50%;
+  font-size: 9px;
+  color: #999;
+}
+
+input[type="radio"] {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+  margin: 0;
+}
+
+input[type="radio"]:checked {
+  border-color: #3498db;
+  border: 3px solid #3498db;
+}
+
+textarea {
+  resize: none;
+  border: none;
+  outline: none;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  color: #afafaf;
+  font-size: 12px;
+  margin-top: 18px;
+  margin-bottom: 30px;
+  width: 210px;
+  height: 60px;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  width: 11px;
+  height: 11px;
+  border: 1px solid #ddd;
+  border-radius: 1px;
+  background: white;
+  margin: 0;
+}
+
+input[type="checkbox"]:checked {
+  border-color: #3498db;
+  border: 3px solid #3498db;
+}
+
+.checkbox {
+  font-size: 10px;
+  color: #afafaf;
+}
+
+a {
+  color: #3498db;
+}
+
+a:hover {
+  filter: brightness(0.8);
+}
+
+.account {
+  width: 200px;
+  height: 35px;
+  background-color: #3498db;
+  border: 0;
+  border-radius: 5px;
+  color: white;
+  margin-top: 30px;
+}
