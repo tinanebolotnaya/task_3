@@ -163,6 +163,13 @@ input[type="tel"] {
   color: #afafaf;
 }
 
+input[type="email"],
+input[type="tel"] {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  padding: 5px;
+}
+
 #email {
   padding-top: 15px;
 }
@@ -226,20 +233,6 @@ input[type="radio"]:checked {
   border: 3px solid #3498db;
 }
 
-textarea {
-  resize: none;
-  border: none;
-  outline: none;
-  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
-  overflow: hidden;
-  color: #afafaf;
-  font-size: 12px;
-  margin-top: 18px;
-  margin-bottom: 30px;
-  width: 210px;
-  height: 60px;
-}
-
 input[type="checkbox"] {
   appearance: none;
   width: 11px;
@@ -248,6 +241,7 @@ input[type="checkbox"] {
   border-radius: 1px;
   background: white;
   margin: 0;
+  margin-top: 40px;
 }
 
 input[type="checkbox"]:checked {
@@ -276,4 +270,28 @@ a:hover {
   border-radius: 5px;
   color: white;
   margin-top: 30px;
+}
+
+.dots-info {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.text {
+  position: absolute; 
+  display: none;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  color: #afafaf;
+  font-size: 12px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 0;
+  width: 180px;
+  height: 60px;
+}
+
+.info:hover + .text {
+  display: block;
 }
