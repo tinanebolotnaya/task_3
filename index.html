@@ -9,73 +9,97 @@
   <body>
     <div class="page-navigation">
       <nav class="page-navigation page-navigation--mobile">
-        <button>
-          <img src="./burger.png" />
+        <button class="page-navigation__button">
+          <img class="page-navigation__icon" src="./burger.png" />
         </button>
-        <img src="./Group.png" />
-        <button>
-          <img src="./repair.png" />
+        <img
+          class="page-navigation__icon page-navigation__icon--extra"
+          src="./Group.png"
+        />
+        <span class="page-navigation__divider"></span>
+        <button class="page-navigation__button">
+          <img class="page-navigation__icon" src="./repair.png" />
         </button>
-        <button>
-          <img src="./checkstatus.png" />
+        <button class="page-navigation__button">
+          <img class="page-navigation__icon" src="./checkstatus.png" />
         </button>
       </nav>
       <nav class="page-navigation page-navigation--tablet">
-        <button>
-          <img src="./burger.png" />
-        </button>
-        <img src="./Group.png" />
-        <button>
-          <img src="./call.png" />
-        </button>
-        <button>
-          <img src="./chat.png" />
-        </button>
-        <button>
-          <img src="./profile.png" />
-        </button>
-        <button>
-          <img src="./repair.png" />
-        </button>
-        <button>
-          <img src="./checkstatus.png" />
-        </button>
-      </nav>
-      <nav class="page-navigation page-navigation--desktop">
-        <button class="page-navigation__button">
-          <img src="./repair.png" />
-          <span>Оставить заявку</span>
-        </button>
-        <button class="page-navigation__button">
-          <img src="./checkstatus.png" />
-          <span>Статус ремонта</span>
-        </button>
+        <div class="page-navigation__brand">
+          <button class="page-navigation__button">
+            <img src="./burger.png" />
+          </button>
+          <span class="page-navigation__divider"></span>
+          <img src="./Group.png" />
+        </div>
+        <div class="page-navigation__contacts">
+          <button class="page-navigation__button">
+            <img src="./call.png" />
+          </button>
+          <button class="page-navigation__button">
+            <img src="./chat.png" />
+          </button>
+          <button class="page-navigation__button">
+            <img src="./profile.png" />
+          </button>
+          <span class="page-navigation__divider"></span>
+        </div>
+        <div class="page-navigation__tools">
+          <button class="page-navigation__button">
+            <img src="./repair.png" />
+          </button>
+          <button class="page-navigation__button">
+            <img src="./checkstatus.png" />
+          </button>
+        </div>
       </nav>
     </div>
     <nav class="site-services">
-      <h2>Услуги и сервисы</h2>
-      <ul class="site-services__list">
-        <li class="site-services__item">Ремонтируемые бренды</li>
-        <li class="site-services__extra">Дополнительные услуги</li>
-        <li class="site-services__item">Ремонтируемые устройства</li>
-        <li class="site-services__item">Цены на услугу</li>
-        <li class="site-services__item">Адреса сервисных центров</li>
-        <li class="site-services__item">Специальные цены</li>
-        <li class="site-services__item">Отзывы</li>
-      </ul>
+      <div class="site-services__header">
+        <h2>Услуги и сервисы</h2>
+        <nav class="page-navigation page-navigation--desktop">
+          <button class="page-navigation__button">
+            <span>Оставить заявку</span>
+            <img src="./repair.png" />
+          </button>
+          <button class="page-navigation__button">
+            <span>Статус ремонта</span>
+            <img src="./checkstatus.png" />
+          </button>
+        </nav>
+      </div>
+      <div class="site-services__list-wrapper">
+        <ul class="site-services__list">
+          <li class="site-services__item">Ремонтируемые устройства</li>
+          <li class="site-services__extra">Дополнительные услуги</li>
+          <li class="site-services__item">Ремонтируемые бренды</li>
+          <li class="site-services__item">Цены на услугу</li>
+          <li class="site-services__item">Адреса сервисных центров</li>
+          <li class="site-services__item">Специальные цены</li>
+          <li class="site-services__item">Отзывы</li>
+        </ul>
+      </div>
     </nav>
-    <div>
-      Мы являемся авторизованным сервисным центром по ремонту техники Dell.
-      Только у нас вы можете отремонтировать свой ноутбук Dell с официальной
-      гарантией производителя. Мы успешно работаем с 1992 года и заслужили
-      репутацию надежного партнера, что подтверждает большое количество
-      постоянных клиентов. Мы гордимся тем, что к нам обращаются по
-      рекомендациям и, в свою очередь, советуют нас родным и близким.
+    <div class="page-end">
+      <div class="page-end__article">
+        Мы являемся авторизованным сервисным центром по ремонту техники Dell.
+        Только у нас вы можете отремонтировать свой ноутбук Dell с официальной
+        гарантией производителя.
+        <span class="page-end__article--tablet"
+          >Мы успешно работаем с 1992 года и заслужили репутацию надежного
+          партнера</span
+        >
+        <span class="page-end__article--desktop"
+          >,что подтверждает большое количество постоянных клиентов. Мы гордимся
+          тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют
+          нас родным и близким.</span
+        >
+        <button class="page-end__button">
+          <img src="./expand.png" />
+          <span>Читать далее</span>
+        </button>
+      </div>
+      <img class="page-end__image" src="./Picture Copy.png" />
     </div>
-    <button>
-      <img src="./expand.png" />
-      <span>Читать далее</span>
-    </button>
-    <img src="./Picture Copy.png" />
   </body>
 </html>
