@@ -1,1 +1,1 @@
-доработанный сайт: https://tinanebolotnaya.github.io/task_3/
+получилось не очень, но проверьте пожалуйста: https://tinanebolotnaya.github.io/task_3/
